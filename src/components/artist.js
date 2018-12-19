@@ -1,0 +1,9 @@
+import React from 'react';
+import ArtistContainer from '../containers/artists_container';
+
+const Artist = (props) =>{
+    return(
+        <ArtistContainer {...props}/>
+    )
+}
+export default Artist;
