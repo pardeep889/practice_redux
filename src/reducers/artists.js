@@ -6,6 +6,18 @@ export default function(state={}, action){
             return {...state,artistsList:action.payload}
         case 'GET_ARTISTS_DETAIL':
             return {...state,artistData:action.payload}
+        case 'LIST_ACTION':
+        return {...state,list:action.payload}
+        case 'PHOTO':
+        return {...state,photo:action.payload}
+        case 'ALBUM':
+        return {...state,album:action.payload}
+        case 'MIX': 
+        return {...state,mixdata:action.payload}
+        case 'PRACTICE':
+        return {...state,practiceData: action.payload}
+        case 'LAST':
+        return {...state,lastData: action.payload}
         default:
             return state;
     }

@@ -7,6 +7,9 @@ import { Provider } from "react-redux";
 import { createStore,applyMiddleware } from "redux";
 import  promiseMiddleware  from "redux-promise";
 
+
+
+
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware)(createStore)
 
 ReactDOM.render(    

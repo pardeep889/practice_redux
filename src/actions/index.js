@@ -32,3 +32,52 @@ export function artistDetail(id){
         payload: request
     }
 }
+
+export function listaction(){
+    const request = axios.get(`${URL}/artists`)
+    .then(response => response.data);
+    return {
+        type: "LIST_ACTION",
+        payload: request
+    }
+}
+
+export function photoAction(){
+    const request = axios.get(`${URL}/artists`)
+    .then(response => response.data);
+    return {
+        type: "PHOTO",
+        payload: request
+    }
+}
+
+export function albumList(){
+    const request = axios.get(`${URL}/artists`)
+    .then(response => response.data);
+    return {
+        type: "ALBUM",
+        payload: request
+    }
+}
+
+export function mixaction(){
+    const request = axios.get(`${URL}/artists`).then(response => response.data);
+    return {
+        type: 'MIX',
+        payload: request
+    }
+}
+export function practiceAction(){
+    const request = axios.get(`${URL}/artists`).then( response => response.data);
+    return {
+        type: "PRACTICE",
+        payload: request
+    }
+}
+export function lastAction(){
+    const req = axios.get(`${URL}/artists`).then(response => response.data);
+    return{
+        type: "LAST",
+        payload: req
+    }
+}

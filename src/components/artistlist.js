@@ -18,8 +18,7 @@ const Artistlist = (props) =>{
                 </Link>
                 ))
                 : null
-            }
-    
+            }    
         </div>
     )
 }
