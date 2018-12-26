@@ -8,6 +8,7 @@ import Photo from './components/photo';
 import Album from './components/album';
 import Mix from './components/mix';
 import Practice from './components/practice';
+import PracticeOne from './components/practice1';
 import Last from './components/last';
 const Routes = () => {
         return(
@@ -19,6 +20,7 @@ const Routes = () => {
                 <Route path="/mix" exact component = {Mix}/>
                 <Route path="/practice" exact component={Practice}/>
                 <Route path="/last" exact component={Last}/>
+                <Route path= "/practice1" exact component={PracticeOne}/>
                 <Route path="/artist/:id" exact component={Artist}/>
             </Switch>
         )

@@ -81,3 +81,10 @@ export function lastAction(){
         payload: req
     }
 }
+export function practiceActionOne(){
+    const request = axios.get(`${URL}/artists`).then( response => response.data);
+    return {
+        type: "PRACTICE_ONE",
+        payload: request
+    }
+}

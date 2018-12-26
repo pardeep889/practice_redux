@@ -18,6 +18,8 @@ export default function(state={}, action){
         return {...state,practiceData: action.payload}
         case 'LAST':
         return {...state,lastData: action.payload}
+        case 'PRACTICE_ONE':
+        return {...state,praconedata: action.payload}
         default:
             return state;
     }
