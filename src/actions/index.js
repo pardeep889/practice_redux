@@ -82,7 +82,10 @@ export function lastAction(){
     }
 }
 export function practiceActionOne(){
-    const request = axios.get(`${URL}/artists`).then( response => response.data);
+    const request =  axios.get('https://api.messari.io/market/assets')
+    .then( response => {
+          return  response.data
+      });
     return {
         type: "PRACTICE_ONE",
         payload: request
